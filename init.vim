@@ -16,9 +16,12 @@ set nocompatible
 set ttyfast
 
 set mouse=a
-set termguicolors
 set relativenumber
 set number
+
+if $TERM_PROGRAM !~ "Apple_Terminal"
+	set termguicolors
+endif
 
 set tabstop=4
 set shiftwidth=4
